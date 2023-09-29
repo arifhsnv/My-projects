@@ -1,0 +1,1556 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 10px;
+}
+:root {
+  --primary: #f9fafc;
+  --light-primary: #262626;
+}
+/* ======================container=========================== */
+.container {
+  width: 100%;
+  height: 700vh;
+  background-color: var(--primary);
+}
+/* ============================navbar=============================== */
+.navbar {
+  width: 80%;
+  height: 10vh;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: row;
+}
+.left-nav {
+  width: 20%;
+  height: 10vh;
+}
+.left-nav h2 {
+  font-family: "Darkline", sans-serif;
+  font-size: 4.2em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 42px;
+  color: #000;
+}
+.center-nav {
+  width: 60%;
+  height: 10vh;
+}
+.list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.center-nav .list li a {
+  color: rgba(38, 38, 38, 0.6);
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 42px;
+}
+.center-nav .list li a:hover {
+  color: var(--light-primary);
+}
+.right-nav {
+  width: 20%;
+  height: 10vh;
+}
+.right-nav .search {
+  width: 100px;
+  height: 35px;
+  border-radius: 6px;
+  background: #b8c2ce;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.search img {
+  width: 39px;
+  height: 39px;
+}
+.search p {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.4em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 42px;
+}
+.search:hover {
+  background-color: var(--light-primary);
+  color: #fff;
+}
+/* =====================header============================== */
+.header {
+  width: 100%;
+  height: 80vh;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.left-header {
+  width: 500px;
+  height: 493px;
+  background-image: url("../basketball_sport_icon_in_minimalist_3d_render_2\ 1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.left-header .final-match {
+  width: 400px;
+  height: 300px;
+  margin-inline: auto;
+  margin-top: 40px;
+}
+.left-header .final-match h2 {
+  font-family: "Sequel", sans-serif;
+  font-size: 8em;
+  font-style: normal;
+  font-weight: 435;
+  line-height: 75px;
+}
+.center-header {
+  width: 30%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.center-header p {
+  color: var(--light-primary);
+  font-family: DM sans-serif;
+  font-size: 1.8em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+.center-header a {
+  width: 285px;
+  height: 62px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background: var(--light-primary);
+  color: #e1e8f0;
+  font-family: DM sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+}
+.center-header a:hover {
+  color: #000;
+}
+.right-header {
+  width: 30%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.right-header .today {
+  border-radius: 3px;
+  background: #e1e8f0;
+  width: 89px;
+  height: 34px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #b8c2ce;
+  font-family: DM sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.right-header .today:hover {
+  background-color: #fff;
+  color: #000;
+}
+.right-header .runners {
+  width: 60%;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url("../beautiful-young-african-woman-sports-clothing-running-against-gray-background\ 1.png");
+  background-position: center;
+  background-size: cover;
+}
+.runners:hover {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+}
+.runners .time {
+  color: rgba(38, 38, 38, 0.6);
+  font-family: DM sans-serif;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 500;
+}
+.runners h2 {
+  width: 80%;
+  color: var(--light-primary);
+  font-family: Sequel sans-serif;
+  font-size: 1.6em;
+  font-style: normal;
+  font-weight: 410;
+}
+.racers {
+  width: 60%;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url("../fastaccelerating-race-car-formula-one-racing-amid-sunset-generative-ai\ 1.png");
+  background-position: center;
+  background-size: cover;
+}
+.racers:hover {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+}
+.racers .time {
+  color: rgba(38, 38, 38, 0.6);
+  font-family: DM sans-serif;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 500;
+}
+.racers h2 {
+  width: 80%;
+  color: var(--light-primary);
+  font-family: Sequel sans-serif;
+  font-size: 1.6em;
+  font-style: normal;
+  font-weight: 410;
+}
+/* ======================category============================= */
+.category {
+  width: 80%;
+  height: 80vh;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+}
+.category .head {
+  width: 100%;
+  height: 8vh;
+}
+.category .head h2 {
+  color: var(--light-primary);
+  font-family: Sequel Sans;
+  font-size: 2.8em;
+  font-style: normal;
+  font-weight: 415;
+  line-height: 38px;
+}
+.category .body {
+  width: 100%;
+  height: 72vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.category .body div {
+  width: 20%;
+  height: 72vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.category .body div:hover {
+  transform: scale(1.1);
+  transition-duration: 0.4s;
+}
+.category .body .football .foot-sport {
+  width: 100%;
+  height: 20vh;
+  border-radius: 6px;
+  background: #ebeef3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Sequel Sans;
+  font-size: 3.7em;
+  font-style: normal;
+  font-weight: 435;
+  line-height: 75px;
+  background: linear-gradient(180deg, #262626 0%, #b8c2ce 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.category .body .ball {
+  width: 100%;
+  height: 50vh;
+  background-image: url("../soccer-ball-green-grass-soccer-field-generative-ai\ 1.png");
+  background-position: center;
+  background-size: cover;
+}
+.category .body .basketball .basket-ball {
+  background-image: url("../close-up-basketball-outdoors\ 1.png");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 30vh;
+}
+.category .body .basketball .bascket-ball {
+  width: 100%;
+  height: 32vh;
+  border-radius: 6px;
+  background: #ebeef3;
+}
+.category .body .basketball .bascket-ball h2 {
+  text-align: center;
+  font-family: Sequel sans-serif;
+  font-size: 3.7em;
+  font-style: normal;
+  font-weight: 435;
+  line-height: 39px;
+  background: linear-gradient(180deg, #262626 0%, #b8c2ce 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 80%;
+  height: 32vh;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+.category .body .raicing .car-sport {
+  width: 100%;
+  height: 20vh;
+  border-radius: 6px;
+  background: #ebeef3;
+}
+.category .body .raicing .car-sport h2 {
+  text-align: center;
+  font-family: Sequel sans-serif;
+  font-size: 3.7em;
+  font-style: normal;
+  font-weight: 435;
+  line-height: 39px;
+  background: linear-gradient(180deg, #262626 0%, #b8c2ce 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 35px;
+}
+.category .body .raicing .car-raicing {
+  width: 100%;
+  height: 50vh;
+  background-image: url("../sport-car-is-drifting-track-with-smoke-around-it\ 1.png");
+  background-position: center;
+  background-size: cover;
+}
+.category .body .tennis .tennis-table {
+  width: 100%;
+  height: 40vh;
+  background-image: url("../red-ping-pong-racket-sports-equipment\ 1.png");
+  background-position: center;
+  background-size: cover;
+}
+.category .body .tennis .tennis-player {
+  width: 100%;
+  height: 20vh;
+  border-radius: 6px;
+  background: #ebeef3;
+}
+.category .body .tennis .tennis-player h2 {
+  text-align: center;
+  font-family: Sequel sans-serif;
+  font-size: 3.7em;
+  font-style: normal;
+  font-weight: 435;
+  line-height: 39px;
+  background: linear-gradient(180deg, #262626 0%, #b8c2ce 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 35px;
+}
+/* =======================trending news====================================== */
+.trending-news {
+  width: 80%;
+  height: 100vh;
+  margin-inline: auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 6px;
+  background: #ebeef3;
+}
+.trending-news .news {
+  width: 45%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.trending-news .news h2 {
+  color: var(--light-primary);
+  font-family: Sequel sans-serif;
+  font-size: 2.8em;
+  font-style: normal;
+  font-weight: 415;
+  line-height: 38px;
+  width: 100%;
+}
+.trending-news .news .horse {
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  flex-direction: row;
+}
+.horse:hover {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+}
+.horse-img {
+  width: 46%;
+  height: 153px;
+  background-image: url("../race-hose\ 1.png");
+  background-position: center;
+  background-size: cover;
+}
+.trending-news .news .horse .horse-info {
+  width: 54%;
+  height: 153px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 10px;
+}
+.trending-news .news .horse .horse-info .time {
+  color: rgba(38, 38, 38, 0.6);
+  font-family: DM sans-serif;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100.9%;
+}
+.trending-news .news .horse .horse-info h2 {
+  color: var(--light-primary);
+  font-family: Sequel sans-serif;
+  font-size: 1.8em;
+  font-style: normal;
+  font-weight: 415;
+  line-height: 136.9%;
+  width: 95%;
+}
+.trending-news .news .horse .horse-info .history {
+  color: #696868;
+  font-family: DM sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 123.9%;
+  width: 85%;
+}
+.trending-news .news hr {
+  width: 279px;
+  height: 1px;
+  background: #b8c2ce;
+  margin-top: 10px;
+  margin-left: 200px;
+}
+.trending-news .news .world-cup {
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  flex-direction: row;
+}
+.world-cup:hover {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+}
+.bycycle-img {
+  width: 46%;
+  height: 153px;
+  background-image: url("../cyclist-leads-actionfront-view-man-riding-bicycle-racing-road\ 1.png");
+  background-position: center;
+  background-size: cover;
+}
+.trending-news .news .world-cup .cycle-info .cycle-time {
+  color: rgba(38, 38, 38, 0.6);
+  font-family: DM Sans;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100.9%;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.trending-news .news .world-cup .cycle-info h2 {
+  color: var(--light-primary);
+  font-family: Sequel sans-serif;
+  font-size: 1.8em;
+  font-style: normal;
+  font-weight: 415;
+  line-height: 136.9%;
+  width: 90%;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.trending-news .news .world-cup .cycle-info .cycle-history {
+  color: #696868;
+  font-family: DM sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 123.9%;
+  width: 60%;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.ryan-garcia {
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  flex-direction: row;
+}
+.ryan-garcia:hover {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+}
+.garcia-img {
+  width: 46%;
+  height: 153px;
+  background-image: url("../empty-boxing-arena-waiting-new-round-d-render-illustration\ 1.png");
+  background-position: center;
+  background-size: cover;
+}
+.garcia-time {
+  color: rgba(38, 38, 38, 0.6);
+  font-family: DM Sans;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100.9%;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.garcia-info h2 {
+  color: var(--light-primary);
+  font-family: Sequel sans-serif;
+  font-size: 1.8em;
+  font-style: normal;
+  font-weight: 415;
+  line-height: 136.9%;
+  width: 90%;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.garcia-history {
+  color: #696868;
+  font-family: DM sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 123.9%;
+  width: 60%;
+  margin-left: 10px;
+}
+.discovering {
+  width: 45%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("../sportsman-drinking-water-training-stationary-bike\ 1.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 6px;
+}
+.discovering a {
+  width: 107.696px;
+  height: 36.088px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  border: 1px solid #ebeef3;
+  color: #ebeef3;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: DM sans-serif;
+  font-size: 2em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.discovering a:hover {
+  background-color: #fff;
+  color: #000;
+  transition-duration: 0.3s;
+}
+.discovering .information {
+  width: 100%;
+  height: 40vh;
+}
+.discovering .information p {
+  color: #fff;
+  font-family: DM sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100.9%;
+  margin-left: 10px;
+}
+.discovering .information h2 {
+  color: #fff;
+  font-family: Sequel sans-serif;
+  font-size: 3.6em;
+  font-style: normal;
+  font-weight: 435;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+/* ====================footballers========================== */
+.footblallers {
+  width: 80%;
+  height: 80vh;
+  margin-inline: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../two-opposing-players-give-handshake-end-game\ 1.png");
+  background-position: cover;
+  background-size: center;
+}
+.footblallers a {
+  width: 107.696px;
+  height: 36.088px;
+  border-radius: 3px;
+  border: 1px solid #ebeef3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #ebeef3;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: DM sans-serif;
+  font-size: 2em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.footblallers a:hover {
+  color: #000;
+  background-color: #fff;
+  transition-duration: 0.3s;
+}
+.footblallers .information {
+  width: 80%;
+  height: 50vh;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: 140px;
+  gap: 20px;
+}
+.footblallers .information .time {
+  color: #f9fafc;
+  font-family: DM sans-serif;
+  font-size: 1.8em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100.9%;
+}
+.footblallers .information .lionel-messi {
+  color: #f9fafc;
+  font-family: Sequel sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 435;
+  line-height: 43px;
+}
+.footblallers .information .finals {
+  color: #fff;
+  font-family: DM sans-serif;
+  font-size: 2em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  width: 70%;
+}
+.direction {
+  width: 80%;
+  height: 20vh;
+  margin-inline: auto;
+  border-radius: 6px;
+  opacity: 0.6;
+  background: #ebeef3;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px;
+}
+.direction img {
+  background-color: black;
+  width: 50px;
+  height: 70px;
+}
+.direction img:hover{
+  background-color: gray;
+  transition-duration: .3s;
+}
+.direction .first {
+  width: 35px;
+  height: 35px;
+  background-color: var(--light-primary);
+  border-radius: 40px;
+  color: #ebeef3;
+  font-family: Sequel sans-serif;
+  font-size: 2.4em;
+  font-style: normal;
+  font-weight: 425;
+  line-height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.direction .second {
+  color: rgba(38, 38, 38, 0.61);
+  font-family: Sequel sans-serif;
+  font-size: 2.4em;
+  font-style: normal;
+  font-weight: 405;
+  line-height: 60px;
+}
+.direction .second:hover{
+  background-color: #262626;
+  border-radius: 40px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition-duration: .3s;
+
+}
+.direction .third{
+  color: rgba(38, 38, 38, 0.61);
+  font-family: Sequel sans-serif;
+  font-size: 2.4em;
+  font-style: normal;
+  font-weight: 405;
+  line-height: 60px;
+}
+.direction .third:hover{
+  background-color: #262626;
+  border-radius: 40px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition-duration: .3s;
+}
+.direction .fourth{
+  color: rgba(38, 38, 38, 0.61);
+  font-family: Sequel sans-serif;
+  font-size: 2.4em;
+  font-style: normal;
+  font-weight: 405;
+  line-height: 60px;
+}
+.direction .fourth:hover{
+  background-color: #262626;
+  border-radius: 40px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition-duration: .3s;
+}
+/* ==================sport news======================= */
+.recent-news{
+  width: 80%;
+  height: 20vh;
+  margin-inline: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+   gap: 450px;
+}
+.recent-news h2{
+  color: var(--light-primary);
+font-family: Sequel sans-serif;
+font-size: 2.8em;
+font-style: normal;
+font-weight: 415;
+line-height: 38px; 
+
+}
+.sports-news{
+  width: 80%;
+  height: 60vh;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.world-taekwondo{
+  width: 25%;
+  height:60vh;
+  background-image: url("../karate-fighters\ 1.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 6px;
+}
+.world-taekwondo:hover{
+  transform: scale(1.1);
+  transition-duration: .3s;
+}
+.world-taekwondo .championships{
+  width: 100%;
+  height: 20vh;
+  backdrop-filter:blur(200px);
+
+}
+
+.world-taekwondo .championships p{
+  color: #EBEEF3;
+font-family: DM sans-serif;
+font-size: 1em;
+font-style: normal;
+font-weight: 500;
+line-height: 100.9%;
+margin-left: 20px;
+margin-top: 10px;
+}
+.world-taekwondo .championships h2{
+  color: #EBEEF3;
+font-family: Sequel sans-serif;
+font-size: 2.4em;
+font-style: normal;
+font-weight: 410;
+line-height: 123.9%;
+margin-left: 20px;
+margin-top: 10px;
+}
+.olimpic-games{
+  width: 30%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.6em;
+background: #EBEEF3;
+}
+.olimpic-games .baku-olimpics{
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+}
+.olimpic-games .baku-olimpics img{
+  width: 70px;
+height: 70px;
+border-radius: 3px;
+margin-top: 20px;
+}
+.olimpic-games .baku-olimpics .information{
+  width: 80%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+}
+.olimpic-games .baku-olimpics .information p{
+  color: rgba(38, 38, 38, 0.60);
+font-family: DM sans-serif;
+font-size: 1em;
+font-style: normal;
+font-weight: 500;
+line-height: 100.9%; 
+margin-left: 10px;
+margin-top: 10px;
+}
+.olimpic-games .baku-olimpics .information h2{
+  color: #262626;
+font-family: Sequel sans-serif;
+font-size: 1.6em;
+font-style: normal;
+font-weight: 410;
+line-height: 123.9%;
+margin-left: 10px;
+margin-top: 10px;
+}
+.golf-championship{
+width: 100%;
+height: 20vh;
+display: flex;
+flex-direction: row;
+}
+.golf-championship img{
+  width: 70px;
+height: 70px;
+border-radius: 3px;
+margin-top: 20px;
+}
+.golf-championship .information{
+  width: 80%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+}
+.golf-championship .information p{
+  color: rgba(38, 38, 38, 0.60);
+font-family: DM Sans;
+font-size: 1em;
+font-style: normal;
+font-weight: 500;
+line-height: 100.9%;
+margin-top: 10px;
+margin-left: 10px;
+}
+.golf-championship .information h2{
+  color: var(--light-primary);
+font-family: Sequel sans-serif;
+font-size: 2.0em;
+font-style: normal;
+font-weight: 410;
+line-height: 123.9%;
+margin-left: 10px;
+margin-top: 10px;
+}
+.england-test{
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+}
+.england-test img{
+  width: 70px;
+  height: 70px;
+  border-radius: 3px;
+margin-top: 20px;
+}
+.england-test .information p{
+  color: rgba(38, 38, 38, 0.60);
+font-family: DM sans-serif;
+font-size: 1em;
+font-style: normal;
+font-weight: 500;
+line-height: 100.9%;
+margin-top: 10px;
+margin-left: 10px;
+}
+.england-test .information h2{
+  color: var(--light-primary);
+font-family: Sequel Sans;
+font-size: 2.4em;
+font-style: normal;
+font-weight: 410;
+line-height: 123.9%;
+margin-top: 10px;
+margin-left: 10px;
+}
+.football-score{
+  width: 60%;
+  height:60vh;
+  display: flex;
+  flex-direction: row;
+  border-radius: 6px;
+background: #EBEEF3;
+}
+.football-score .Club{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 60vh;
+}
+.football-score .Club h2{
+  color: var(--light-primary);
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Sequel Sans;
+font-size: 1.6em;
+font-style: normal;
+font-weight: 420;
+line-height: normal;
+margin-left: 10px;
+margin-top: 20px;
+}
+.football-score .Club .list{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-top: 30px;
+  gap: 26px;
+ 
+}
+.football-score .Club .list hr{
+  width: 570px;
+height: 0.5px;
+background: #B8C2CE;
+}
+.football-score .Club .list li{
+  display: flex;
+  flex-direction: row;
+}
+.football-score .Club .list li img{
+  width: 23.586px;
+height: 24px;
+}
+.football-score .Club .list li :nth-child(2){
+  color: #262626;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Sequel sans-serif;
+font-size: 1.3em;
+font-style: normal;
+font-weight: 420;
+line-height: normal;
+}
+.pounds{
+  width: 60%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+}
+.pounds table{
+  width: 100%;
+  height: 60vh;
+}
+.pounds table tbody tr th{
+  color: var(--light-primary);
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Sequel Sans;
+font-size: 1.6em;
+font-style: normal;
+font-weight: 420;
+line-height: normal;
+}
+.pounds table tbody tr td{
+  color: var(--light-primary);
+text-align: center;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Sequel sans-serif;
+font-size: 1.6em;
+font-style: normal;
+font-weight: 405;
+line-height: normal;
+}
+/* ===================sport article============================= */
+.sport-article{
+  width: 80%;
+  height: 80vh;
+  margin-inline: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.sport-article .top-article{
+  width: 100%;
+  height: 10vh;
+}
+.sport-article .top-article h2{
+  color: var(--light-primary);
+font-family: Sequel sans-serif;
+font-size: 2.8em;
+font-style: normal;
+font-weight: 415;
+line-height: 38px;
+}
+.sport-article .body-article{
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sport-article .body-article div{
+  width: 30%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+}
+.sport-article .body-article .jake-will .basketball-img{
+  width: 100%;
+  height: 50%;
+  background-image: url("../basketball-equipment\ 1.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.sport-article .body-article .jake-will .basketball-img a{
+  border-radius: 4px;
+  border: 0.75px solid #EBEEF3;
+  width: 76px;
+  height: 28px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #EBEEF3;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: DM Sans;
+font-size: 1.2em;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-right: 10px;
+margin-top: 10px;
+}
+.sport-article .body-article .jake-will .basketball-img a:hover{
+  color:#fff;
+  background-color: var(--light-primary);
+  transition-duration: .2s;
+}
+.sport-article .body-article .jake-will .basket-info{
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sport-article .body-article .jake-will .basket-info .jake-pic{
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+}
+.sport-article .body-article .jake-will .basket-info .jake-pic img{
+  width: 44px;
+height: 44px;
+}
+.sport-article .body-article .jake-will .basket-info .jake-pic h2{
+  color: var(--Black, #3E3232);
+  font-family: 'Roboto', sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px;
+margin-top: 10px;
+margin-left: 10px;
+}
+.sport-article .body-article .jake-will .basket-info .time{
+  color: rgba(38, 38, 38, 0.60);
+font-family: DM Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 100.9%;
+}
+.sport-article .body-article .jake-will .basket-info .introducing{
+  color: #262626;
+  font-family: Sequel sans-serif;
+  font-size: 2em;
+  font-style: normal;
+  font-weight: 415;
+  line-height: 29px; 
+}
+.sport-article .body-article .jake-will .basket-info .strength{
+  color: #696868;
+font-family: DM Sans;
+font-size: 1.6em;
+font-style: normal;
+font-weight: 500;
+line-height: 123.9%;
+}
+.sport-article .body-article .hockey .foxi-img{
+  width: 100%;
+  height: 42%;
+  background-image: url("../hockey-players\ 1.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.sport-article .body-article .hockey .foxi-img a{
+  border-radius: 4px;
+  border: 0.75px solid #EBEEF3;
+  width: 76px;
+  height: 28px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #EBEEF3;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: DM Sans;
+font-size: 1.2em;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-right: 10px;
+margin-top: 10px;
+}
+.sport-article .body-article .hockey .foxi-img a:hover{
+  color:#fff;
+  background-color:rgb(106, 145, 228);
+  transition-duration: .2s;
+}
+.sport-article .body-article .hockey .foxi-pic{
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+}
+.sport-article .body-article .hockey .foxi-pic img{
+  width: 44px;
+  height: 44px;
+}
+.sport-article .body-article .hockey .foxi-pic h2{
+  color: var(--Black, #3E3232);
+  font-family: 'Roboto', sans-serif;
+font-size: 1.4em;
+font-style: normal;
+font-weight: 500;
+line-height: 22px;
+margin-top: 10px;
+margin-left: 10px;
+}
+.sport-article .body-article .hockey .time{
+  color: rgba(38, 38, 38, 0.60);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100.9%;
+  margin-top: 10px;
+}
+.sport-article .body-article .hockey .introducing{
+  color: var(--light-primary);
+  font-family: Sequel sans-serif;
+  font-size: 2em;
+  font-style: normal;
+  font-weight: 415;
+  line-height: 29px; 
+  margin-top: 10px;
+}
+.sport-article .body-article .hockey .strength{
+  color: #696868;
+  font-family: DM Sans;
+  font-size: 1.6em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 123.9%;
+  margin-top: 20px;
+}
+.sport-article .body-article .badminton .badminton-img{
+  width: 100%;
+  height: 42%;
+  background-image: url("../three-white-shuttlecocks-badminton-racquet\ 1.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.sport-article .body-article .badminton .badminton-img a{
+  border-radius: 4px;
+  border: 0.75px solid #EBEEF3;
+  width: 76px;
+  height: 28px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #EBEEF3;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: DM Sans;
+font-size: 1.2em;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-right: 10px;
+margin-top: 10px;
+}
+.sport-article .body-article .badminton .badminton-img a:hover{
+  color:#fff;
+  background-color:rgba(59, 13, 13, 0.356);
+  transition-duration: .2s;
+}
+.sport-article .body-article .badminton .bong-img{
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+}
+.sport-article .body-article .badminton .bong-img img{
+  width: 44px;
+  height: 44px;
+}
+.sport-article .body-article .badminton .bong-img h2{
+color: #3E3232;
+font-family: Roboto;
+font-size: 1.4em;
+font-style: normal;
+font-weight: 500;
+line-height: 22px;
+margin-top: 10px;
+margin-left: 10px;
+}
+.sport-article .body-article .badminton .time{
+  color: rgba(38, 38, 38, 0.60);
+  font-family: DM Sans;
+  font-size: 1.4em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100.9%;
+  margin-top: 10px;
+}
+.sport-article .body-article .badminton .introducing{
+  color: var(--light-primary);
+  font-family: Sequel sans-serif;
+  font-size: 2em;
+  font-style: normal;
+  font-weight: 415;
+  line-height: 29px; 
+  margin-top: 10px;
+}
+.sport-article .body-article .badminton .strength{
+  color: #696868;
+  font-family: DM Sans;
+  font-size: 1.6em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 123.9%;
+  margin-top: 20px;
+}
+/* ======================direction====================== */
+.left-right{
+  width: 80%;
+  margin-inline: auto;
+  height: 12vh;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;  
+}
+.left-right img{
+  width: 50px;
+height: 70px;
+
+}
+.left-right :nth-child(1){
+  background-color: rgb(194, 194, 194);
+}
+.footer{
+  width: 80%;
+  height: 80vh;
+  margin-inline: auto;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+}
+.top-footer{
+  width: 100%;
+  height: 60vh;
+  border-radius: 6px;
+background: #EBEEF3;
+display: flex;
+flex-direction: row;
+}
+.top-footer .left-footer{
+  width: 60%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+
+}
+.top-footer .left-footer h2{
+  font-family: Sequel sans-serif;
+font-size: 6em;
+font-style: normal;
+font-weight: 435;
+line-height: 60px; 
+background: linear-gradient(180deg, #262626 0%, #B8C2CE 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+margin-top: 100px;
+margin-left: 20px;
+}
+.top-footer .left-footer input{
+  width: 514px;
+height: 58px;
+border-radius: 6px;
+border: 1px solid var(--light-primary);
+color: rgba(38, 38, 38, 0.37);
+font-family: DM sans-serif;
+font-size: 2.1em;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; 
+background-color: #EBEEF3;
+}
+.email{
+  width: 80%;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+.email p{
+  width: 74.09px;
+  height: 58px;
+  border-radius: 0px 6px 6px 0px;
+background: #262626;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+.top-footer .right-footer{
+  width: 40%;
+  height: 60vh;
+  background-image: url("../american-football-player-posing-with-ball-white\ 1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.footer .bottom-footer{
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+}
+.footer .bottom-footer .left-side{
+  width: 50%;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+}
+.footer .bottom-footer .left-side img{
+  width: 187.307px;
+height: 48.126px;
+}
+.footer .bottom-footer .right-side{
+  width: 50%;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.footer .bottom-footer .right-side img{
+  background-color: black;
+  width: 50px;
+  height: 70px;
+}
+.footer .bottom-footer .right-side img:hover{
+  background-color: gray;
+  transition-duration: .3s;
+}
+.footer .bottom-footer .right-side .first{
+  width: 35px;
+  height: 35px;
+  background-color: var(--light-primary);
+  border-radius: 40px;
+  color: #ebeef3;
+  font-family: Sequel sans-serif;
+  font-size: 2.4em;
+  font-style: normal;
+  font-weight: 425;
+  line-height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer .bottom-footer .right-side .second{
+  color: rgba(38, 38, 38, 0.61);
+  font-family: Sequel sans-serif;
+  font-size: 2.4em;
+  font-style: normal;
+  font-weight: 405;
+  line-height: 60px;
+}
+.footer .bottom-footer .right-footer .second:hover{
+  background-color: #262626;
+  border-radius: 40px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition-duration: .3s;
+}
+.footer .bottom-footer .right-side .third{
+  color: rgba(38, 38, 38, 0.61);
+  font-family: Sequel sans-serif;
+  font-size: 2.4em;
+  font-style: normal;
+  font-weight: 405;
+  line-height: 60px;
+}
+.footer .bottom-footer .right-side .third:hover{
+  background-color: #262626;
+  border-radius: 40px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition-duration: .3s;
+}
+.footer .bottom-footer .right-side .fourth{
+  color: rgba(38, 38, 38, 0.61);
+  font-family: Sequel sans-serif;
+  font-size: 2.4em;
+  font-style: normal;
+  font-weight: 405;
+  line-height: 60px;
+}
+.footer .bottom-footer .right-side .fourth:hover{
+  background-color: #262626;
+  border-radius: 40px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition-duration: .3s;
+}
